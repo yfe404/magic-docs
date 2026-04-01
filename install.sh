@@ -53,8 +53,9 @@ info "Installed hook scripts to $SCRIPTS_DIR/"
 
 # ── Copy skill ──────────────────────────────────────────────────────────────
 
-cp "$SCRIPT_DIR/skills/update-docs.md" "$SKILLS_DIR/"
-info "Installed /update-docs skill to $SKILLS_DIR/"
+mkdir -p "$SKILLS_DIR/update-docs"
+cp "$SCRIPT_DIR/skills/update-docs/SKILL.md" "$SKILLS_DIR/update-docs/"
+info "Installed /update-docs skill to $SKILLS_DIR/update-docs/"
 
 # ── Merge hooks into settings.json ──────────────────────────────────────────
 
@@ -129,5 +130,5 @@ echo ""
 echo "  Uninstall:"
 echo "    rm $SCRIPTS_DIR/magic-docs-detect.sh"
 echo "    rm $SCRIPTS_DIR/magic-docs-stop.sh"
-echo "    rm $SKILLS_DIR/update-docs.md"
+echo "    rm -rf $SKILLS_DIR/update-docs"
 echo "    Remove the hooks entries from $SETTINGS_FILE"
