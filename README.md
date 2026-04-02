@@ -74,7 +74,7 @@ This mechanism was discovered by reading the leaked source at `src/query.ts:1282
 ### Quick Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/magic-docs.git
+git clone https://github.com/yfe404/magic-docs.git
 cd magic-docs
 ./install.sh
 ```
